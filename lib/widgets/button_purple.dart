@@ -15,7 +15,7 @@ class ButtonPurple extends StatelessWidget {
         Scaffold.of(context).showSnackBar(
             SnackBar(
               content: Text("Navegando"),
-            )
+          )
         );
       },
       child: Container(

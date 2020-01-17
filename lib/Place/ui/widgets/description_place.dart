@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'button_purple.dart';
+import 'package:platzi_trips_app/widgets/button_purple.dart';
 
 class DescriptionPlace extends StatelessWidget {
 
@@ -15,7 +15,7 @@ class DescriptionPlace extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
 
-    final star_half = Container (
+    final star_half = Container(
       margin: EdgeInsets.only(
           top: 353.0,
           right: 3.0
@@ -27,7 +27,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final star_border = Container (
+    final star_border = Container(
       margin: EdgeInsets.only(
           top: 353.0,
           right: 3.0
@@ -39,7 +39,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final star = Container (
+    final star = Container(
       margin: EdgeInsets.only(
         top: 353.0,
         right: 3.0
@@ -51,7 +51,7 @@ class DescriptionPlace extends StatelessWidget {
       ),
     );
 
-    final title_stars = Row (
+    final title_stars = Row(
       children: <Widget>[
         Container (
           margin: EdgeInsets.only(
@@ -91,8 +91,8 @@ class DescriptionPlace extends StatelessWidget {
           top: 20.0,
           left: 20.0,
           right: 20.0
-
       ),
+
       child: new Text(
         descriptionPlace,
         style: const TextStyle(
@@ -110,11 +110,9 @@ class DescriptionPlace extends StatelessWidget {
       children: <Widget>[
         title_stars,
         description,
-        ButtonPurple("Navigate")
+        ButtonPurple("Navigate"),
       ],
     );
 
-
   }
-
 }
